@@ -2,7 +2,7 @@
 import os
 from fabric.api import *
 
-env.hosts = ['100.25.19.204', '54.157.159.85']
+env.hosts = ['52.87.255.3', '18.209.179.139']
 
 
 def do_clean(number=0):
@@ -11,8 +11,8 @@ def do_clean(number=0):
     Args:
         number (int): The number of archives to keep.
 
-    If number is 0 or 1, keeps only the most recent archive. If
-    number is 2, keeps the most and second-most recent archives,
+    If number is 0 or 1, keeps only the most recent archive. 
+    If number is 2, keeps the most and second-most recent archives,
     etc.
     """
     number = 1 if int(number) == 0 else int(number)
